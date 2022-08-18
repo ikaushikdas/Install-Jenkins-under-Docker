@@ -1,0 +1,36 @@
+Steps for Installing Docker:
+1. Open the terminal on Ubuntu.
+
+2. Remove any Docker files that are running in the system, using the following command:
+
+$ sudo apt-get remove docker docker-engine docker.io
+After entering the above command, you will need to enter the password of the root and press enter.
+
+3. Check if the system is up-to-date using the following command:
+
+$ sudo apt-get update
+4. Install Docker using the following command:
+
+$ sudo apt install docker.io
+You’ll then get a prompt asking you to choose between y/n - choose y
+
+5. Install all the dependency packages using the following command:
+
+$ sudo snap install docker
+6. Before testing Docker, check the version installed using the following command:
+
+$ docker --version
+7. Pull an image from the Docker hub using the following command:
+
+$ sudo docker run hello-world
+Here, hello-world is the docker image present on the Docker hub.
+
+8. Check if the docker image has been pulled and is present in your system using the following command:
+
+$ sudo docker images
+9. To display all the containers pulled, use the following command:
+
+$ sudo docker ps -a
+10. To check for containers in a running state, use the following command:
+
+$ sudo docker ps
