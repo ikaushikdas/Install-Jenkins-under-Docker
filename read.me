@@ -1,8 +1,11 @@
 Run the following command:
 #--------------------------
 docker network create jenkins
+
+#-- Optional---#
 docker volume create jenkins-docker-certs
 docker volume create jenkins-data
+#----------------
 
 #Then Run this below to create Docker Dind image:
 #------------------------------------------------
